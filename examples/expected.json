@@ -1,0 +1,167 @@
+{
+ "hw4_4d.md": {
+  "context": "hw4_4d.context.md",
+  "must": [
+   [
+    "HIGH",
+    "Leakage",
+    "checked_in_online"
+   ],
+   [
+    "HIGH",
+    "Matrix",
+    "precision"
+   ],
+   [
+    "HIGH",
+    "Matrix",
+    "without recall"
+   ],
+   [
+    "MEDIUM",
+    "Baseline",
+    "majority"
+   ],
+   [
+    "HIGH",
+    "Leakage",
+    "same people"
+   ],
+   [
+    "HIGH",
+    "Claim",
+    "Causal"
+   ],
+   [
+    "MEDIUM",
+    "Claim",
+    "ship"
+   ],
+   [
+    "LOW",
+    "Leakage",
+    "past no-show"
+   ]
+  ]
+ },
+ "loan_default.md": {
+  "must": [
+   [
+    "HIGH",
+    "Matrix",
+    "accuracy"
+   ],
+   [
+    "HIGH",
+    "Leakage",
+    "collections_status"
+   ],
+   [
+    "MEDIUM",
+    "Split",
+    "time order"
+   ],
+   [
+    "HIGH",
+    "Claim",
+    "Causal"
+   ]
+  ],
+  "must_not": [
+   "credit_score",
+   "annual_income"
+  ]
+ },
+ "churn.md": {
+  "must": [
+   [
+    "MEDIUM",
+    "Leakage",
+    "logins_next_month"
+   ],
+   [
+    "HIGH",
+    "Baseline",
+    "majority"
+   ],
+   [
+    "MEDIUM",
+    "Claim",
+    "ship"
+   ],
+   [
+    "MEDIUM",
+    "Split",
+    "time order"
+   ]
+  ],
+  "must_not": [
+   "plan_price"
+  ]
+ },
+ "readmission.md": {
+  "must": [
+   [
+    "HIGH",
+    "Leakage",
+    "follow_up_visit_attended"
+   ],
+   [
+    "HIGH",
+    "Matrix",
+    "recall"
+   ],
+   [
+    "MEDIUM",
+    "Claim",
+    "Causal"
+   ],
+   [
+    "LOW",
+    "Leakage",
+    "prior_admissions_count"
+   ]
+  ],
+  "must_not": [
+   "Split",
+   "length_of_stay"
+  ]
+ },
+ "fraud.md": {
+  "must": [],
+  "max_high": 0,
+  "must_not": [
+   "Causal",
+   "Split",
+   "amount",
+   "doesn't match"
+  ]
+ },
+ "returns.md": {
+  "must": [
+   [
+    "HIGH",
+    "Leakage",
+    "refund_issued"
+   ],
+   [
+    "HIGH",
+    "Matrix",
+    "f1"
+   ],
+   [
+    "HIGH",
+    "Leakage",
+    "same people"
+   ],
+   [
+    "HIGH",
+    "Claim",
+    "Causal"
+   ]
+  ],
+  "must_not": [
+   "items_in_cart"
+  ]
+ }
+}
